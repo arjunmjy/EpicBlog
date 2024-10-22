@@ -5,14 +5,7 @@ import CallToAction from '../components/CallToAction';
 import CommentSection from '../components/CommentSection';
 import PostCard from '../components/PostCard';
 
-export default function PostPage() {
-  const { postSlug } = useParams();
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
-  const [post, setPost] = useState(null);
-  const [recentPosts, setRecentPosts] = useState(null);
 
-  useEffect(() => {
     const fetchPost = async () => {
       try {
         setLoading(true);
